@@ -1,21 +1,18 @@
-﻿#include <QCoreApplication>
-#include "graph_array.h"
+﻿#include "graph_adjList.h"
 #include <iostream>
 
 using std::cin;
 using std::cout;
 using std::endl;
 
-void test_graph_array()
+void test_graph_adjList()
 {
-    graph_array g;
-    g.createGraph(6);
-    g.getAdjNode(3);
+    graph_adjList g;
+    g.createAdjGraph(4);
+    g.locateVnode(3);
 }
-int main(int argc, char *argv[])
+int main()
 {
-    QCoreApplication a(argc, argv);
-    test_graph_array();
-
-    return a.exec();
+    //test_graph_array();
+    test_graph_adjList();
 }
