@@ -16,6 +16,7 @@ void test_graph_array()
 
 void test_graph_adjlist()
 {
+
     graph_adjList g;
     g.createAdjGraph(6);
     g.locateVnodeOut(3);
@@ -23,15 +24,8 @@ void test_graph_adjlist()
 }
 void test_graph_orthogonallist()
 {
-    graph_OrthogonalList g;
-    g.create_graph_table(5);
-    g.create_graph_List(14);
-    g.print_graph_OrthogonalList();
-}
-int main()
-{
     int p[14][3]={
-        {3,1,10},
+        {0,1,10},
         {0,3,100},
         {1,2,40},
         {1,3,70},
@@ -46,6 +40,17 @@ int main()
         {4,1,80},
         {4,3,60},
     };
+    graph_OrthogonalList g;
+    g.create_graph_table(5);
+    g.create_graph_List(14,p);
+    g.print_graph_OrthogonalList();
+    g.create_Indegree_connection();
+    g.getIndegree(5);
+    g.getOutdegree(5);
+}
+int main()
+{
+
     test_graph_orthogonallist();
     return 0;
 }

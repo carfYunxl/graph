@@ -78,7 +78,10 @@ public:
 
     void create_graph_table(int vexNum);//创建十字链表
     void create_graph_List(int edgeNum,int p[14][3]);//创建十字链表
+    void create_Indegree_connection();//连接入度链表
     void print_graph_OrthogonalList();
+    void getIndegree(ELEMTYPE data);//获取结点的入度
+    void getOutdegree(ELEMTYPE data);//获取结点的入度
 };
 
 #endif // GRAPH_ORTHOGONALLIST_H
