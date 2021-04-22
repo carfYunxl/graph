@@ -59,6 +59,7 @@ void graph_adjList::locateVnodeOut(ELEMTYPE data)
     cout << "vnode pos = " << pos << endl;
     cout << "vnode out degree = " << tmp << endl;
 }
+//计算顶点的入度
 void graph_adjList::locateVnodeIn(ELEMTYPE data)
 {
     int tmp = 0;
